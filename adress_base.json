@@ -1,0 +1,41 @@
+[
+  {
+    "firstName": "Иван",
+    "lastName": "Иванов",
+    "address": {
+      "streetAddress": "Московское ш.",
+      "city": "Санкт-Петербург",
+      "postalCode": 10101
+    },
+    "phoneNumbers": [
+      "912 132-1234",
+      "812 123-7894"
+    ]
+  },
+  {
+    "firstName": "Игорь",
+    "lastName": "Панов",
+    "address": {
+      "streetAddress": "Московское ш.",
+      "city": "Москва",
+      "postalCode": 15646
+    },
+    "phoneNumbers": [
+      "912 132-2334",
+      "812 123-5647"
+    ]
+  },
+  {
+    "firstName": "Ирина",
+    "lastName": "Нахомова",
+    "address": {
+      "streetAddress": "ул. Красная",
+      "city": "Екатеринбург",
+      "postalCode": 14578
+    },
+    "phoneNumbers": [
+      "912 232-8954",
+      "812 323-7894"
+    ]
+  }
+]
