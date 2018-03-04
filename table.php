@@ -12,6 +12,19 @@ $data = json_decode($data_json, true);
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Таблица адресов и телефонов</title>
+    <style type="text/css">
+        TABLE {
+            width: 300px;
+            border-collapse: collapse;
+        }
+        TD {
+            padding: 3px;
+            border: 1px solid black;
+        }
+        thead {
+            background: #b0e0e6;
+        }
+    </style>
 </head>
 <body>
 <pre>
@@ -26,7 +39,8 @@ $data = json_decode($data_json, true);
           <td>Улица</td>
           <td>Город</td>
           <td>Индекс</td>
-          <td>Телефон</td>
+          <td>Телефон(осн.)</td>
+          <td>Телефон(доп.)</td>
       </tr>
       </thead>
       <tbody>
@@ -38,7 +52,10 @@ $data = json_decode($data_json, true);
               <td><?php echo $user['address']['streetAddress'] ?></td>
               <td><?php echo $user['address']['city'] ?></td>
               <td><?php echo $user['address']['postalCode'] ?></td>
-              <td><?php echo $user['phoneNumbers'][0] ?></td>
+
+              <?php foreach ($user['phoneNumbers'] as $number) : ?>
+              <td> <?php echo $number ?></td>
+              <?php endforeach;?>
           </tr>
         <?php endforeach;?>
       </tbody>
