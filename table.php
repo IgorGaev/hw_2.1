@@ -1,6 +1,7 @@
 <?php
-$data_json = file_get_contents('adress_base.json');
+$data_json = file_get_contents(__DIR__.'/adress_base.json');
 $data = json_decode($data_json, true);
+
 ?>
 
 <!doctype html>
@@ -19,6 +20,7 @@ $data = json_decode($data_json, true);
   <table>
       <thead>
       <tr>
+          <td>Номер</td>
           <td>Имя</td>
           <td>Фамилия</td>
           <td>Улица</td>
@@ -28,14 +30,17 @@ $data = json_decode($data_json, true);
       </tr>
       </thead>
       <tbody>
-      <tr>
-          <td>Имя</td>
-          <td>Фамилия</td>
-          <td>Улица</td>
-          <td>Город</td>
-          <td>Индекс</td>
-          <td>Телефон</td>
-      </tr>
+        <?php foreach ($data as $i => $user) :?>
+          <tr>
+              <td><?php echo ++$i ?></td>
+              <td><?php echo $user['firstName'] ?></td>
+              <td><?php echo $user['lastName'] ?></td>
+              <td><?php echo $user['address']['streetAddress'] ?></td>
+              <td><?php echo $user['address']['city'] ?></td>
+              <td><?php echo $user['address']['postalCode'] ?></td>
+              <td><?php echo $user['phoneNumbers'][0] ?></td>
+          </tr>
+        <?php endforeach;?>
       </tbody>
   </table>
 
