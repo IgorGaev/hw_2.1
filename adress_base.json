@@ -52,11 +52,24 @@
     ]
   },
   {
-    "firstName": "Олег",
-    "lastName": "Попов",
+    "firstName": "Сергей",
+    "lastName": "Иванов",
     "address": {
-      "streetAddress": "ул. Щорса",
-      "city": "Стамбул",
+      "streetAddress": "ул. Кирова",
+      "city": "Самара",
+      "postalCode": 12455
+    },
+    "phoneNumbers": [
+      "918 232-5237",
+      "905 232-1128"
+    ]
+  },
+  {
+    "firstName": "Иван",
+    "lastName": "Петров",
+    "address": {
+      "streetAddress": "ул. Мира",
+      "city": "Москва",
       "postalCode": 12378
     },
     "phoneNumbers": [
@@ -69,24 +82,12 @@
     "lastName": "Попов",
     "address": {
       "streetAddress": "ул. Щорса",
-      "city": "Стамбул",
+      "city": "Москва",
       "postalCode": 12378
     },
     "phoneNumbers": [
-      "918 232-5247",
-      "905 232-1248"
-    ]
-  },{
-    "firstName": "Олег",
-    "lastName": "Попов",
-    "address": {
-      "streetAddress": "ул. Щорса",
-      "city": "Стамбул",
-      "postalCode": 12378
-    },
-    "phoneNumbers": [
-      "918 232-5247",
-      "905 232-1248"
+      "923 223-1234",
+      "905 223-1248"
     ]
   }
 
